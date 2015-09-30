@@ -3,6 +3,7 @@
 (2. git add FILE)
 3. git commit -a
 
+** exit uemacs: esc-Z **
 
 http://gitref.org/basic/ Very good reference to commands
 
