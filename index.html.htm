@@ -15,6 +15,17 @@
 
 </script>
 <!--<?php include_once("analyticstracking.php") ?>-->
+
+<script>
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+     function () {
+     document.location = url;
+     }
+   });
+}
+</script> 
+
 </HEAD>
 
 <BODY BACKGROUND=""
@@ -54,9 +65,17 @@ p span.displaynone { display:none; }
 </style><p>Mikko.O.Hakala(.at.)<span 
 class="displaynone">null</span>helsinki&#46;fi<br>
 
-Research group <A HREF="http://helixs.physics.helsinki.fi">HELIXS</A> and &rarr; <A HREF="http://helixs.physics.helsinki.fi/index.php/people/profiles/22-mikko-hakala">my page</A> <p>
+Research group <A HREF="http://helixs.physics.helsinki.fi" onclick="trackOutboundLink('http://helixs.physics.helsinki.fi'); return false;">HELIXS</A> and &rarr; <A HREF="http://helixs.physics.helsinki.fi/index.php/people/profiles/22-mikko-hakala" onclick="trackOutboundLink('http://helixs.physics.helsinki.fi/index.php/people/profiles/22-mikko-hakala'); return false;">my page</A> <p> 
 
-<a href="https://www.researchgate.net/profile/Mikko_Hakala">ResearchGate</a> / <a href="http://www.linkedin.com/profile/view?id=137755831">LinkedIn</a> / <a href="http://twitter.com/hakala_mo">Twitter</a> / <a href="http://www.scoop.it/u/mikko-hakala">Scoop.it!</a><br>
+<!-- Research group <A HREF="http://helixs.physics.helsinki.fi">HELIXS</A> and &rarr; <A HREF="http://helixs.physics.helsinki.fi/index.php/people/profiles/22-mikko-hakala">my page</A> <p> -->
+
+<a href="http://fi.linkedin.com/pub/mikko-hakala/3a/173/987" onclick="trackOutboundLink('http://fi.linkedin.com/pub/mikko-hakala/3a/173/987'); return false;">
+      
+          <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_120x33.png" width="120" height="33" border="0" alt="View Mikko Hakala's profile on LinkedIn">
+        
+    </a><br>
+
+<a href="https://www.researchgate.net/profile/Mikko_Hakala" onclick="trackOutboundLink('https://www.researchgate.net/profile/Mikko_Hakala'); return false;">ResearchGate</a> / <a href="http://twitter.com/hakala_mo" onclick="trackOutboundLink('http://twitter.com/hakala_mo'); return false;">Twitter</a> / <a href="http://www.scoop.it/u/mikko-hakala" onclick="trackOutboundLink('http://www.scoop.it/u/mikko-hakala'); return false;">Scoop.it!</a><br>
 
 <!-- -->
 
@@ -65,11 +84,6 @@ www-page: <A HREF="http://www.chem.helsinki.fi/Research/CMS">www.chem.helsinki.f
 
 <A href="publications_hakala">PUBLICATION LIST</a> /  <A HREF="https://tuhat.halvi.helsinki.fi/portal/en/persons/mikko-oskari-hakala%28c95031f7-b4e5-4762-a94b-b84b84f6bfa3%29.html">TUHAT database</A><p>
 
-<a href="http://fi.linkedin.com/pub/mikko-hakala/3a/173/987">
-      
-          <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_120x33.png" width="120" height="33" border="0" alt="View Mikko Hakala's profile on LinkedIn">
-        
-    </a><BR>
 
 </H3>
 
@@ -78,9 +92,11 @@ www-page: <A HREF="http://www.chem.helsinki.fi/Research/CMS">www.chem.helsinki.f
 
     <TD ALIGN="left" VALIGN="top" WIDTH="240"
         BGCOLOR="#ffffff"> &nbsp;<br><br><br>
+<a href="http://fi.linkedin.com/pub/mikko-hakala/3a/173/987" onclick="trackOutboundLink('http://fi.linkedin.com/pub/mikko-hakala/3a/173/987'); return false;">
         <IMG SRC="figures/mikko.JPG" hborder="10"
         ALT="" HEIGHT="200"
         VSPACE="0" HSPACE="0" BORDER="0">
+</a>
     </TD>
 
 </TR>
@@ -498,6 +514,8 @@ M. Hakala, M. J. Puska, and R. M. Nieminen, <A HREF="pdf/PRB57.pdf">Phys. Rev. B
 
 </TR>
 </TABLE>
+
+<!--<script>!function(){var t=function(t,e){e?window.open(t,e):window.location.href=t},e=function(t,e,n){t.addEventListener?t.addEventListener(e,n):t.attachEvent(.on.+e,function(){n.call(t)})};if(document.getElementsByTagName)for(var n=document.getElementsByTagName(.a.),i=document.domain.split(...).reverse()[1]+...+document.domain.split(...).reverse()[0],a=0;a<n.length;a++){var o=.string.==typeof n[a].getAttribute(.href.)?n[a].getAttribute(.href.):..,r=o.match(i);(o.match(/^(https?:|\/\/)/i)&&!r||o.match(/^mailto\:/i))&&e(n[a],.click.,function(e){var n=this.getAttribute(.href.),i=.string.==typeof this.getAttribute(.target.)?this.getAttribute(.target.):..;console.log(.add event.,n),ga(.send.,.event.,.outbound.,.click.,n,{hitCallback:t(n,i)},{nonInteraction:1}),e.preventDefault()})}}();</script>-->
 
 </BODY>
 </HTML>
