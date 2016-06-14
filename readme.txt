@@ -16,4 +16,16 @@ https://github.com/mohakala/homepage.git
 git pull origin master
 https://git-scm.com/book/be/v2/Git-Basics-Working-with-Remotes
 
+Myös
+git clone xx@xx.xx:xx.git
+do work
+git commit -am "x"
+git pull
+- fix conflicts
+git commit -am "x"
+git push
+
+
+
+
 
